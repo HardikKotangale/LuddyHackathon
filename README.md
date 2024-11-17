@@ -42,7 +42,7 @@ LuddyHackathon/
 
 ### Step 1: Clone the Repository
 ```bash
-git clone <repository_url>
+git clone https://github.com/HardikKotangale/LuddyHackathon.git
 cd LuddyHackathon
 ```
 
@@ -58,6 +58,15 @@ source venv/bin/activate
 ```
 
 ### Step 3: Install Dependencies
+Create a requirements.txt file with the following dependencies:
+```
+Flask==2.2.3
+firebase-admin==6.1.0
+gunicorn==20.1.0
+Werkzeug==2.2.3
+```
+
+Then install using:
 ```bash
 pip install -r requirements.txt
 ```
@@ -141,12 +150,6 @@ FIREBASE_DATABASE_URL=your_database_url
 FLASK_ENV=development
 FLASK_APP=run.py
 ```
-
-## License
-[Add your license information here]
-
-## Support
-For support or questions, please contact the hackathon organizers or create an issue in the repository.
 
 ## Acknowledgments
 - LuddyHackathon organizers
