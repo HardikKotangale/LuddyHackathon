@@ -1,5 +1,6 @@
 # LuddyHackathon Project
 link of the working POC: https://luddy-hacakthon-e4ff2822c5f8.herokuapp.com/
+
 This project is part of the LuddyHackathon and utilizes Firebase to manage real-time data. Follow the steps below to set up and run the project locally.
 
 ## Prerequisites
