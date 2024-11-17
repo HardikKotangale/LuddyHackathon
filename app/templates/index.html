@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Management</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Management</h1>
+
+        <!-- Add Contact Form -->
+        <section>
+            <h2>Add Contact</h2>
+            <form id="addContactForm">
+                <input type="text" id="product_name" name="product_name" placeholder="Product Name" required>
+                <input type="text" id="repo_name" name="repo_name" placeholder="Repository Name" required>
+                <input type="text" id="first_name" name="first_name" placeholder="First Name" required>
+                <input type="text" id="last_name" name="last_name" placeholder="Last Name" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <input type="text" id="chat_user_name" name="chat_user_name" placeholder="Chat User Name" required>
+                <input type="text" id="location" name="location" placeholder="Location" required>
+                <input type="text" id="title" name="title" placeholder="Title or Role" required>
+                <button type="submit">Add Contact</button>
+            </form>
+        </section>
+
+        <!-- Update Contact Form -->
+        <section>
+            <h2>Update Contact</h2>
+            <form id="updateContactForm">
+                <input type="text" id="update_chat_user_name" name="update_chat_user_name" placeholder="Chat User Name (to update)" required>
+                <select id="updateField" name="updateField" required>
+                    <option value="product_name">Product Name</option>
+                    <option value="repo_name">Repository Name</option>
+                    <option value="first_name">First Name</option>
+                    <option value="last_name">Last Name</option>
+                    <option value="email">Email</option>
+                    <option value="location">Location</option>
+                    <option value="title">Title or Role</option>
+                </select>
+                <input type="text" id="updateValue" name="updateValue" placeholder="New Value" required>
+                <button type="submit">Update Contact</button>
+            </form>
+        </section>
+
+        <!-- Search Contact Form -->
+        <section>
+            <h2>Search Contact</h2>
+            <form id="searchContactForm">
+                <select id="searchType" name="searchType" required>
+                    <option value="product_name">Search by Product Name</option>
+                    <option value="repo_name">Search by Repository Name</option>
+                </select>
+                <input type="text" id="searchQuery" name="searchQuery" placeholder="Enter your query" required>
+                <button type="submit">Search</button>
+            </form>
+        </section>
+
+        <!-- Delete Contact Form -->
+
+        <section>
+            <h2>Delete Contact</h2>
+            <form id="deleteContactForm">
+                <input type="text" id="delete_contact_id" name="delete_contact_id" placeholder="Enter Chat User Name" required>
+                <button type="submit">Delete Contact</button>
+            </form>
+        </section>
+
+    </div>
+
+    <script src="/static/scripts.js"></script>
+</body>
+</html>

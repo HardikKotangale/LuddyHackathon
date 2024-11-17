@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #444;
+    margin-bottom: 10px;
+    text-align: center; /* Center-align all section headers */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align form inputs and buttons */
+}
+
+form input, form select, form button {
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 16px;
+    width: 90%; /* Make inputs and buttons consistent in width */
+    max-width: 500px; /* Set a maximum width for larger screens */
+}
+
+form button {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+form button:hover {
+    background-color: #4cae4c;
+}
+
+#addResponse, #viewResponse, #deleteResponse {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center; /* Center-align the response text */
+}
+
+#addResponse {
+    background-color: #e7f7e7;
+    color: #2d662d;
+}
+
+#viewResponse {
+    background-color: #eef7fd;
+    color: #2d5a8a;
+}
+
+#deleteResponse {
+    background-color: #fbeaea;
+    color: #8a2d2d;
+}
+
+/* Popup Container */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    width: 90%;
+    z-index: 1000;
+    text-align: center;
+}
+
+/* Popup Title */
+.popup h3 {
+    margin: 0 0 10px;
+    text-align: center;
+    color: #333;
+}
+
+/* Field Container */
+.field {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+/* Field Label */
+.label {
+    font-weight: bold;
+    color: #555;
+}
+
+/* Field Value */
+.value {
+    color: #000;
+    text-align: right;
+}
+
+/* Close Button */
+.close-btn {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.close-btn:hover {
+    background-color: #4cae4c;
+}
